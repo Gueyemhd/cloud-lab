@@ -45,7 +45,7 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ${{ env.AWS_REGION }}
 
-      - name: Deploy to ECS
+      - name: Deploy to AWS ECS Fargate
         run: |
           aws ecs update-service \
             --cluster ${{ env.ECS_CLUSTER }} \
