@@ -6,7 +6,7 @@ on:
 
 env:
   DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
-  AWS_REGION: eu-north-3
+  AWS_REGION: eu-north-1
   ECS_CLUSTER: blog-cluster
   ECS_SERVICE: blog-service
 
