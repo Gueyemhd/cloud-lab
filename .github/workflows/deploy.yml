@@ -35,7 +35,7 @@ jobs:
 
   deploy:
     needs: build
-    name: Deploy to ECS
+    name: Deploy to AWS ECS Fargate
     runs-on: ubuntu-latest
     steps:
       - name: Configure AWS credentials
